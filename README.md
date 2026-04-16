@@ -1,4 +1,4 @@
-Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (ref: https://pypy.org/)
+Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (fichier python.exe)(ref: https://pypy.org/)
 
 
 Importations / installations nécéssaires :
