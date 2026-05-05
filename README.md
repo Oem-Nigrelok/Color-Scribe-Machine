@@ -4,6 +4,7 @@ Color Scribe Machine Group (CSMG) est fier de présenter le fichier de programme
 Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (fichier python.exe)(ref: https://pypy.org/)
 
 ATTENTION COLOR SCRIBE MACHINE GROUP VOUS RECOMMANDE VIVEMENT DE PLACER DANS LE FICHIER VOTRE PALETTE DE COULEUR QUOTIDIENNE POUR NE PAS AVOIR A LA REECRIRE. ELLE RESTERA DANS CE FICHIER TANT QUE CE FICHIER EXISTE.
+
 -----> liste_de_couleurs_utilisables_de_base = [(0, 255, 255), (255, 255, 0), (255, 0, 255)]
 A modifier (sous format : (r, g, b), (r, g, b), ...)
 
