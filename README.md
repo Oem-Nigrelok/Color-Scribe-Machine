@@ -20,7 +20,7 @@ Interface graphique Tkinter simpliste avec quelques outils:
   
   Rectangle remplit (couleurs choisissables)
   
-  Ligne (couleurs choisissables)
+  Ligne (couleurs choisissables) ------------ variation de la taille
   
   Bouton retour ------------------------------ prise en charge de tous les tracés sauf la gomme
 
@@ -43,12 +43,99 @@ Format d'exportation multiple:
   Les résultats des mélanges seront aussi gérés par le logitiel. Aucune couleur en dehors de la palette rentrée par l'utilisateur ne sera demandée.
 
 
-Outils intelligents (avec Pillow):
+Outils intelligents:
 
   Import d'image ----------------------------- réduction de couleur intégrée (5s à max 20 min en fonction de la palette et de l'image)
   
   Transformation d'une image en contour ------ noir (5s à max 20 min en fonction de l'image)
   
   Gestion de la pallette de couleur ---------- création de couleur par synthèse soustractive des couleurs tapées
+
+  Combiner les tracés proches (Gcode) -------- (5s à max 20 min en fonction des tracés fait)
+
+  Type de configuration ---------------------- De base ou personnalisée
   
-  Les temps d'exécution maximaux sont calculés par admition d'un calcul / ms
+  Les temps d'exécution maximaux sont calculés par admition d'un calcul par mseconde, sans pypy
+
+
+Racourcis clavier:
+
+"<z>" ---------------------------------------- retour()
+
+"<Z>" ---------------------------------------- retour()
+
+"<r>" ---------------------------------------- rouge()
+
+"<R>" ---------------------------------------- rouge()
+
+"<t>" ---------------------------------------- rectangle()
+
+"<T>" ---------------------------------------- rectangle()
+
+"<y>" ---------------------------------------- cyan()
+
+"<Y>" ---------------------------------------- cyan()
+
+"<u>" ---------------------------------------- changement_de_type_de_performance()
+
+"<U>" ---------------------------------------- changement_de_type_de_performance()
+
+"<i>" ---------------------------------------- image_en_couleur()
+
+"<I>" ---------------------------------------- image_en_couleur()
+
+"<o>" ---------------------------------------- image_en_contour()
+
+"<O>" ---------------------------------------- image_en_contour()
+
+"<p>" ---------------------------------------- maj_palette_de_couleur()
+
+"<P>" ---------------------------------------- maj_palette_de_couleur()
+
+"<q>" ---------------------------------------- augmenter_taille()
+
+"<Q>" ---------------------------------------- augmenter_taille()
+
+"<s>" ---------------------------------------- diminuer_taille()
+
+"<S>" ---------------------------------------- diminuer_taille()
+
+"<g>" ---------------------------------------- gomme()
+
+"<G>" ---------------------------------------- gomme()
+
+"<h>" ---------------------------------------- remplissage_rectangulaire()
+
+"<H>" ---------------------------------------- remplissage_rectangulaire()
+
+"<j>" ---------------------------------------- jaune()
+
+"<J>" ---------------------------------------- jaune()
+
+"<k>" ---------------------------------------- bleu()
+
+"<K>" ---------------------------------------- bleu()
+
+"<l>" ---------------------------------------- ligne()
+
+"<L>" ---------------------------------------- ligne()
+
+"<m>" ---------------------------------------- magenta()
+
+"<M>" ---------------------------------------- magenta()
+
+"<w>" ---------------------------------------- générer_le_fichier_Gcode()
+
+"<W>" ---------------------------------------- générer_le_fichier_Gcode()
+
+"<x>" ---------------------------------------- autre_couleur_choix()
+
+"<X>" ---------------------------------------- autre_couleur_choix()
+
+"<v>" ---------------------------------------- vert()
+
+"<V>" ---------------------------------------- vert()
+
+"<n>" ---------------------------------------- noir()
+
+"<N>" ---------------------------------------- noir()
