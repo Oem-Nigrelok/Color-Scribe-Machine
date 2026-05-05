@@ -1,10 +1,13 @@
+Color Scribe Machine Group (CSMG) est fier de présenter le fichier de programme python de la Color Scribe Machine (CSM) V1.0
+
+
 Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (fichier python.exe)(ref: https://pypy.org/)
 
 ATTENTION COLOR SCRIBE MACHINE GROUP VOUS RECOMMANDE VIVEMENT DE PLACER DANS LE FICHIER VOTRE PALETTE DE COULEUR QUOTIDIENNE POUR NE PAS AVOIR A LA REECRIRE. ELLE RESTERA DANS CE FICHIER TANT QUE CE FICHIER EXISTE.
 -----> liste_de_couleurs_utilisables_de_base = [(0, 255, 255), (255, 255, 0), (255, 0, 255)]
-# A modifier (sous format : (r, g, b), (r, g, b), ...)
+A modifier (sous format : (r, g, b), (r, g, b), ...)
 
-Importations / installations nécéssaires :
+#Importations / installations nécéssaires :
 
 import tkinter as tk ------------------------- pip install tkinter
 
@@ -13,7 +16,7 @@ import ast ----------------------------------- installé de base
 from PIL import Image, ImageFilter ----------- pip install pillow
 
 
-Interface graphique Tkinter simpliste avec quelques outils:
+#Interface graphique Tkinter simpliste avec quelques outils:
 
   Gomme -------------------------------------- variation de la taille
   
@@ -28,7 +31,7 @@ Interface graphique Tkinter simpliste avec quelques outils:
   Bouton retour ------------------------------ prise en charge de tous les tracés sauf la gomme
 
   
-Interface adaptable:
+#Interface adaptable:
 
   Taille de la fenêtre
   
@@ -37,7 +40,7 @@ Interface adaptable:
   Zoom d'origine ----------------------------- adapté à un écran moyen
 
   
-Format d'exportation multiple:
+#Format d'exportation multiple:
   
   .txt
   
@@ -46,7 +49,7 @@ Format d'exportation multiple:
   Les résultats des mélanges seront aussi gérés par le logitiel. Aucune couleur en dehors de la palette rentrée par l'utilisateur ne sera demandée.
 
 
-Outils intelligents:
+#Outils intelligents:
 
   Import d'image ----------------------------- réduction de couleur intégrée (5s à max 20 min en fonction de la palette et de l'image)
   
@@ -67,7 +70,7 @@ Outils intelligents:
   Les temps d'exécution maximaux sont calculés par admition d'un calcul par mseconde, sans pypy
 
 
-Racourcis clavier:
+#Racourcis clavier:
 
 "z" ---------------------------------------- retour()
 
