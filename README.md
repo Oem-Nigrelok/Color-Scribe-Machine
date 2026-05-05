@@ -1,5 +1,8 @@
 Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (fichier python.exe)(ref: https://pypy.org/)
 
+ATTENTION COLOR SCRIBE MACHINE GROUP VOUS RECOMMANDE VIVEMENT DE PLACER DANS LE FICHIER VOTRE PALETTE DE COULEUR QUOTIDIENNE POUR NE PAS AVOIR A LA REECRIRE. ELLE RESTERA DANS CE FICHIER TANT QUE CE FICHIER EXISTE.
+-----> liste_de_couleurs_utilisables_de_base = [(0, 255, 255), (255, 255, 0), (255, 0, 255)]
+# A modifier (sous format : (r, g, b), (r, g, b), ...)
 
 Importations / installations nécéssaires :
 
@@ -54,6 +57,12 @@ Outils intelligents:
   Combiner les tracés proches (Gcode) -------- (5s à max 20 min en fonction des tracés fait)
 
   Type de configuration ---------------------- De base ou personnalisée
+
+  Dessiner avec la palette ------------------- Ajout de couleurs possible pendant le dessin
+
+  Viewer de la couleur actuelle
+
+  Voir la palette de couleur
   
   Les temps d'exécution maximaux sont calculés par admition d'un calcul par mseconde, sans pypy
 
@@ -139,3 +148,11 @@ Racourcis clavier:
 "<n>" ---------------------------------------- noir()
 
 "<N>" ---------------------------------------- noir()
+
+Flèche haut ---------------------------------- utiliser_couleur_palette_suivante()
+
+Flèche bas ---------------------------------- utiliser_couleur_palette_précédente()
+
+Gauche -------------------------------------- ajouter_couleur_à_la_palette()
+
+Droite -------------------------------------- afficher_la_palette()
