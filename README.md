@@ -7,7 +7,7 @@ ATTENTION COLOR SCRIBE MACHINE GROUP VOUS RECOMMANDE VIVEMENT DE PLACER DANS LE 
 -----> liste_de_couleurs_utilisables_de_base = [(0, 255, 255), (255, 255, 0), (255, 0, 255)]
 A modifier (sous format : (r, g, b), (r, g, b), ...)
 
-#Importations / installations nécéssaires :
+# Importations / installations nécéssaires :
 
 import tkinter as tk ------------------------- pip install tkinter
 
@@ -16,7 +16,7 @@ import ast ----------------------------------- installé de base
 from PIL import Image, ImageFilter ----------- pip install pillow
 
 
-#Interface graphique Tkinter simpliste avec quelques outils:
+# Interface graphique Tkinter simpliste avec quelques outils:
 
   Gomme -------------------------------------- variation de la taille
   
@@ -31,7 +31,7 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   Bouton retour ------------------------------ prise en charge de tous les tracés sauf la gomme
 
   
-#Interface adaptable:
+# Interface adaptable:
 
   Taille de la fenêtre
   
@@ -40,7 +40,7 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   Zoom d'origine ----------------------------- adapté à un écran moyen
 
   
-#Format d'exportation multiple:
+# Format d'exportation multiple:
   
   .txt
   
@@ -49,7 +49,7 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   Les résultats des mélanges seront aussi gérés par le logitiel. Aucune couleur en dehors de la palette rentrée par l'utilisateur ne sera demandée.
 
 
-#Outils intelligents:
+# Outils intelligents:
 
   Import d'image ----------------------------- réduction de couleur intégrée (5s à max 20 min en fonction de la palette et de l'image)
   
@@ -70,7 +70,7 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   Les temps d'exécution maximaux sont calculés par admition d'un calcul par mseconde, sans pypy
 
 
-#Racourcis clavier:
+# Racourcis clavier:
 
 "z" ---------------------------------------- retour()
 
