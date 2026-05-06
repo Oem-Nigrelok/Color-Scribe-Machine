@@ -23,7 +23,7 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   
   Crayon (couleurs choisissables) ------------ variation de la taille (recomandée : max 7 sans pypy) et gestion des performances
   
-  Rectangle (couleurs choisissables)
+  Rectangle (couleurs choisissables) --------- variation de la taille
   
   Rectangle remplit (couleurs choisissables)
   
@@ -55,6 +55,8 @@ from PIL import Image, ImageFilter ----------- pip install pillow
   Import d'image ----------------------------- réduction de couleur intégrée (5s à max 20 min en fonction de la palette et de l'image)
   
   Transformation d'une image en contour ------ noir (5s à max 20 min en fonction de l'image)
+
+  Gestion des couleurs ----------------------- Quelques couleur de base disponible, ajout de couleur en code hexadécimal
   
   Gestion de la pallette de couleur ---------- création de couleur par synthèse soustractive des couleurs tapées
 
@@ -62,9 +64,11 @@ from PIL import Image, ImageFilter ----------- pip install pillow
 
   Type de configuration ---------------------- De base ou personnalisée
 
-  Dessiner avec la palette ------------------- Ajout de couleurs possible pendant le dessin
+  Dessiner avec la palette ------------------- Ajout de couleurs possible pendant le dessin, vision de la palette
 
-  Viewer de la couleur actuelle
+  Viewer de la couleur actuelle -------------- Affichage et code hexadécimal
+  
+  Viewer de la couleur du dessin ------------- Compatible aux outils d'images, Affichage et code hexadécimal
 
   Voir la palette de couleur
   
@@ -153,10 +157,12 @@ from PIL import Image, ImageFilter ----------- pip install pillow
 
 "N" ---------------------------------------- noir()
 
-Flèche haut ---------------------------------- utiliser_couleur_palette_suivante()
+Flèche Droite ---------------------------------- utiliser_couleur_palette_suivante()
 
-Flèche bas ---------------------------------- utiliser_couleur_palette_précédente()
+Flèche Gauche ---------------------------------- utiliser_couleur_palette_précédente()
 
-Gauche -------------------------------------- ajouter_couleur_à_la_palette()
+Flèche Bas -------------------------------------- retirer_couleur_à_la_palette()
 
-Droite -------------------------------------- afficher_la_palette()
+Flèche Haut -------------------------------------- ajouter_couleur_à_la_palette()
+
+"pause" -------------------------------------- afficher_la_palette()
