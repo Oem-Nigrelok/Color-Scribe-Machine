@@ -1,6 +1,7 @@
 Color Scribe Machine Group (CSMG) est fier de présenter le fichier de programme python de la Color Scribe Machine (CSM) V2.0
 
-V1.0 (tous les outils sauf les wiewers)
+V1.0 (tous les outils sans gestion d'épaisseur, pas de wiewers de couleur)
+
 VBêta (construction des outils)
 
 Recommendation pour augmenter la vitesse d'éxécution : installer pypy comme interpréteur (fichier python.exe)(ref: https://pypy.org/)
