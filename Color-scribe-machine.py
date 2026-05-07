@@ -1462,6 +1462,7 @@ def générer_le_fichier_Gcode():
                         for élément in tracé:
                             f.write(f"G0 X{round(élément[0][1][0] / taille_du_multiplicateur_choix, 2)} Y{round(élément[0][1][1] / taille_du_multiplicateur_choix, 2)}\n")
                         f.write("G0 Z10\n")
+                f.write("G0 X0 Y0 Z10\n")
                 f.write("G0 X0 Y0 Z0\n")
         except Exception as e:
             print(f"Erreur lors de l'écriture du fichier : {e}")
