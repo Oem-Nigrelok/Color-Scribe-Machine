@@ -1248,10 +1248,10 @@ def image_en_couleur_suite():
     except Exception as e:
             print(f"Erreur lors de l'ouverture du fichier : {e}")
             try:
-                if Position_affichage["text"].split("E")[1] != f"rreur lors de l'ouverture du fichier : {e}":
-                    Position_affichage["text"] += f", Erreur lors de l'ouverture du fichier : {e}"
+                if Position_affichage["text"].split("E")[1] != "rreur lors de l'ouverture du fichier":
+                    Position_affichage["text"] += ", Erreur lors de l'ouverture du fichier"
             except Exception:
-                Position_affichage["text"] += f", Erreur lors de l'ouverture du fichier : {e}"
+                Position_affichage["text"] += ", Erreur lors de l'ouverture du fichier"
             return
     if img_de_base.size[0] > img_de_base.size[1]:
         img_de_base = img_de_base.rotate(90, expand = 1, fillcolor='white')
@@ -1309,15 +1309,15 @@ def image_en_couleur_suite():
 def image_en_contour():
     global liste_des_tracés, taille_de_la_feuille_x, taille_de_la_feuille_y, fenêtre_de_couleur_globale, couleur_moyenne, Position_affichage
     fichier = simpledialog.askstring("Fichier image","Tapez le fichier image de référence")
-    try:   
-        img = Image.open(fichier).convert("RGB")
+    try:
+        img_de_base = Image.open(fichier).convert('RGB')
     except Exception as e:
             print(f"Erreur lors de l'ouverture du fichier : {e}")
             try:
-                if Position_affichage["text"].split("E")[1] != f"rreur lors de l'ouverture du fichier : {e}":
-                    Position_affichage["text"] += f", Erreur lors de l'ouverture du fichier : {e}"
+                if Position_affichage["text"].split("E")[1] != "rreur lors de l'ouverture du fichier":
+                    Position_affichage["text"] += ", Erreur lors de l'ouverture du fichier"
             except Exception:
-                Position_affichage["text"] += f", Erreur lors de l'ouverture du fichier : {e}"
+                Position_affichage["text"] += ", Erreur lors de l'ouverture du fichier"
             return
     if img.size[0] > img.size[1]:
         img = img.rotate(90, expand = 1, fillcolor='white')
